@@ -47,7 +47,7 @@ function addLeadingZero(baseString, digitCount) {
  	$minutes.text(minutes);
 
   }, 100);
- });
+
 $('.Stop').on('click', function(){
 	clearInterval(interval);
 	if (diffTime.getTime() > leaderTime.getTime()){
