@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>UserData</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="userData.js"></script>
+      <link rel="stylesheet" type="text/css" href="userData.css">
+    </head>
+    <body>
+         <div class="workSpace" id="userData">
+        <h2>Using User Data</h1>
+        <div class="col-4">
+          <h3>What OS are you using?</h3><br />
+          <span class="userInformation" id="operatingS"></span><br />
+          <div id="osImg"></div>
+          <button id="detectOS">Operating System</button>
+        </div>
+        <div class="col-4">
+          <h3>What Browser are you using?</h3>
+          <p>The browser you're using is:
+          <span class="userInformation" id="browser"></span>
+          <br /></p>
+          <button id="detectBrowser">Browser Type</button>
+          <p>Did you know?<br/>IE11, Chrome, Firefox, and Safari return appName "Netscape".<br />Chrome, Firefox, IE, Safari, and Opera all return appCodeName "Mozilla".</p>
+        </div>
+        <div class="col-4">
+          <h3>What is the current size of your window?</h3>
+          The browser size is: <br /><span class="userInformation" id="windowSize"></span><br />
+
+          <button id="browserSize">Browser Size</button>
+        </div>
+        <div class="col-4">
+          <h3>Did you resize the browser window?</h3>
+          <span class="userInformation" id="resize"></span>
+
+        </div>
+    </body>
+</html>
