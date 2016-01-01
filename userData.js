@@ -1,15 +1,9 @@
-// Using User Data
-// Detect the OS that the user is using
-// Detect the Browser that the user is using
-// Detect the size of the window
-// Detect when the user is resizing their browser window
-// Do something for each Detection result!
+
 $(document).ready(function(){
 
     function detectOS(){
         var operatingSystem;
-        //if navigator.appVersion.indexOf(" ") does not return -1 then it is true
-        //there for the operating system thats being indexed there
+        
         if (navigator.appVersion.indexOf("Win")!=-1){
             operatingSystem = "Windows";
             $('#osImg').append('<img src="./img/win.jpg" />');
@@ -81,7 +75,7 @@ $(document).ready(function(){
     });
 
     $(window).resize(function(){
-        alert('You Just Resized this Window Bruh!');
+        alert('Window Resized!');
         $('#resize').text('Yes!')
     });
 
